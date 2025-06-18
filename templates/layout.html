@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-g">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Vulnerable Note{% endblock %}</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        header { border-bottom: 2px solid #eee; margin-bottom: 20px; padding-bottom: 10px; }
+        h1 { margin: 0; }
+        .content { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="/">Vulnerable Note</a></h1>
+        </header>
+
+    <main class="content">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
